@@ -1,0 +1,39 @@
+{
+  "name": "test_stats",
+  "version": "0.0.0",
+  "description": "Renaldo Bot App.",
+  "repository": "none",
+  "main": "app.js",
+  "dependencies": {
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "flux": "^2.0.1",
+    "keymirror": "~0.1.0",
+    "object-assign": "^1.0.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  },
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "envify": "^3.0.0",
+    "jest-cli": "~0.1.17",
+    "reactify": "^1.1.1",
+    "uglify-js": "~2.4.15",
+    "watchify": "^2.1.1"
+  },
+  "scripts": {
+    "start": "watchify -o bundle.js -v -d .",
+    "build": "NODE_ENV=development grunt build-dev",
+    "test": "jest"
+  },
+  "author": "Renaldo Williams",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  },
+  "jest": {
+    "rootDir": "./js"
+  }
+}

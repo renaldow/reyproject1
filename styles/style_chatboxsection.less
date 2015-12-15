@@ -1,0 +1,59 @@
+
+.chatbox-section {
+    min-width: 100px;
+    max-width: 900px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.chatbox-section-inner {
+        width: 100%;
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    border-radius: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: auto;
+    max-height: 430px;
+    box-shadow: -13px 19px 48px rgba(0, 0, 0, 0.5);
+
+    .setgradients(#302F33, #5C5964, #302F33);
+}
+
+.chatbox-section-inner::-webkit-scrollbar {
+    width: 12px;
+}
+
+.chatbox-section-inner::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.chatbox-section-inner::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+​
+
+.chatbox-listsection {
+    height: 100%;
+    bottom: 0px;
+    background-color: transparent;
+    position: relative;
+}
+
+
+.setgradients(@gradientcolor1, @gradientcolor2, @gradientcolor3) {
+  background: -webkit-linear-gradient(left, @gradientcolor1, @gradientcolor2, @gradientcolor3);
+  background: -o-linear-gradient(right, @gradientcolor1, @gradientcolor2, @gradientcolor3);
+  background: -moz-linear-gradient(right, @gradientcolor1, @gradientcolor2, @gradientcolor3);
+  background: linear-gradient(right, @gradientcolor1, @gradientcolor2, @gradientcolor3);
+}
